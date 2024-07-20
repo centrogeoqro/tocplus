@@ -1,0 +1,701 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Parameters:" href="module2.html" /><link rel="prev" title="Welcome to TOC+ documentation!" href="index.html" />
+
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+        <title>&lt;no title&gt; - TOC+ documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" /
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">TOC+  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TOC+  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">TOC</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="module2.html"><code class="docutils literal notranslate"><span class="pre">TOCdiff()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="module2.html#src.toccompare.compute"><code class="docutils literal notranslate"><span class="pre">compute()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="module2.html#src.toccompare.plot"><code class="docutils literal notranslate"><span class="pre">plot()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="module2.html#src.toccompare.plotComp"><code class="docutils literal notranslate"><span class="pre">plotComp()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="module2.html#src.toccompare.resample"><code class="docutils literal notranslate"><span class="pre">resample()</span></code></a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/module1.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <dl class="py class" id="module-src.tocplus">
+<dt class="sig sig-object py" id="src.tocplus.TOC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.tocplus.</span></span><span class="sig-name descname"><span class="pre">TOC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([],</span> <span class="pre">dtype=float64)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groundtruth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([],</span> <span class="pre">dtype=float64)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC" title="Link to this definition">¶</a></dt>
+<dd><p>This class implements the Total Operating Characteristic Curve. The TOC computed from a rankl and groundtruth using this instantiation is named <strong>standard TOC</strong> trought the document.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rank</strong> – The class is instantiated with the optional parameter <code class="docutils literal notranslate"><span class="pre">rank</span></code> that is a numpy array of a predicting feature.</p></li>
+<li><p><strong>groundtruth</strong> – The class is instantiated with the optional parameter <code class="docutils literal notranslate"><span class="pre">groundtruth</span></code> that is a numpy array of binary labels (0,1).</p></li>
+<li><p><strong>sortw</strong> – 1 by default, the data is sorted using the formula: 1e9*rank+sortw*groundtruth, that means that data with the highest class value is sorted first.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Variables<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>kind</strong> – A string with the value ‘None’ by default, it indicates the kind of TOC, for instance: TOC, normalized, vector, density and qspline. The <code class="docutils literal notranslate"><span class="pre">kind</span></code> attibute is mainly used for plotting inside the class.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The class instance, if <code class="docutils literal notranslate"><span class="pre">rank</span></code> and <code class="docutils literal notranslate"><span class="pre">grountruth</span></code> are given it computes the TOC, and the <code class="docutils literal notranslate"><span class="pre">kind</span></code> is TOC, otherwise it is an empty class. Some methods of the TOC class return the other kinds of TOC, suich as density, noprmalize, etc.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">TOC</span></code></p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.PDataProp">
+<span class="sig-name descname"><span class="pre">PDataProp</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.PDataProp" title="Link to this definition">¶</a></dt>
+<dd><p>Proportion of positive data in the data. The purpose is to maintain the proportion of class 1 data, hence to preserve the knowlkedege about data imbalance and proportion of calsses even if the TOC is normalized.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.TOCdiff">
+<span class="sig-name descname"><span class="pre">TOCdiff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.TOCdiff" title="Link to this definition">¶</a></dt>
+<dd><p>This method computes the difference between the self TOC  (the TOC which the method is called from) and the T2 TOC (self-T2). Possibly the best usage with two normlized TOCs, nevertheless the method does not validate such a case.
+The TOC with the lowest number of data is resampled, to get to TOC with the same number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T2</strong> – the second TOC that is substracted from the TOC the method is called from (self-T2).</p>
+</dd>
+<dt class="field-even">Variables<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>kind</strong> – <em>‘Diff’</em>, the resulting TOC is kind ‘Diff’.</p></li>
+<li><p><strong>ndata</strong> – The number of data in the resulting curve is the greater of the two input TOCs.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns the a new curve with the difference., new memory is allocated.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">TOC</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.TP">
+<span class="sig-name descname"><span class="pre">TP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#src.tocplus.TOC.TP" title="Link to this definition">¶</a></dt>
+<dd><p>A numpy array with the sum of true positives</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.TPplusFP">
+<span class="sig-name descname"><span class="pre">TPplusFP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#src.tocplus.TOC.TPplusFP" title="Link to this definition">¶</a></dt>
+<dd><p>A numpy array with the sum of true positives plus false positives.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.area" title="Link to this definition">¶</a></dt>
+<dd><p>Area under the curve of the TOC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.areaComputation">
+<span class="sig-name descname"><span class="pre">areaComputation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.areaComputation" title="Link to this definition">¶</a></dt>
+<dd><p>This method computes the area under the curve of the TOC and parallelogram and the proportional ratio
+:return: Returns the TOC’s area under the curve
+:rtype: <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.areaRatio">
+<span class="sig-name descname"><span class="pre">areaRatio</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.areaRatio" title="Link to this definition">¶</a></dt>
+<dd><p>areaRatio with respect to the parallelogram. If the maximum TOC area is that of the parallelogram, hence this is the ratio of the TOC area inside the parallelogram divided by the parallelogram arena.
+Notice that the area inside the parallelogram is usually different from the area under the curve, it is computed substracting from the <code class="docutils literal notranslate"><span class="pre">area</span></code> the triangle in the left side of the parallelogram.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.basenpos">
+<span class="sig-name descname"><span class="pre">basenpos</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.basenpos" title="Link to this definition">¶</a></dt>
+<dd><p>basenpos preserve the npos value from the standard TOC when it is normalized. Nevertheless it is modified by resample.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.basentppfp">
+<span class="sig-name descname"><span class="pre">basentppfp</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.basentppfp" title="Link to this definition">¶</a></dt>
+<dd><p>Some TOCs result from applying operations to an standard TOC, in such a case the ntppfp could change int the resulting TOC nevertheless the basentppfp is copied from the standard TOC.
+For instance, ntppfp is 1 in the normalized TOC, but the basetppfp preserves the value from the standard TOC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.density">
+<span class="sig-name descname"><span class="pre">density</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smoothing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.density" title="Link to this definition">¶</a></dt>
+<dd><p>This function computes an approximation of the derivative of the TOC curve using cubic and fifth order centered finite differences.
+That is to say, if the <code class="docutils literal notranslate"><span class="pre">order</span></code> parameter is set to 1, it computes an approximation using a the finite difference before and after the current point, hence
+this approximation provides a cubic error term. Additionally, the function computes a smooth version of the derivative using a mean filter.
+The original TP and TPplusFP arrays from the input TOC (the TOC which this function is called from) are copied.
+.. warning::
+It is strongly suggested to use a <strong>vector</strong> or <strong>nvector</strong>  kind TOC, because the derivative of a standard TOC only produces finite differences with 0 or 1, hence
+the derivative of a standard TOC is, usually, highly noisy and non-informative. It is strongly suggested to use a <strong>vector</strong> kind TOC produced from a normalized TOC,
+or a <strong>nvector</strong> TOC, because this kind of TOC have a maximum value of 1 in both access, hence, the derivative can be seen as a density probability function.
+This is intended use of the function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smoothing</strong> – window size param for smoothing the derivative. It is -1 by default, so it is computed inside the function trying to present an informative smooth TOC. Optional</p></li>
+<li><p><strong>order</strong> – 1 by defautl. 1 uses formulae for derivatives with a cubic error term, and 2, produces a 5-powered error term. Optional</p></li>
+</ul>
+</dd>
+<dt class="field-even">Variables<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>df</strong> – density/TOC derivative function approximation (numpy array). This variable can be publicly acccesed in this TOC.</p></li>
+<li><p><strong>smooth</strong> – smoothed density/TOC derivative (numpy array). This variable can be publicly acccesed in this TOC..</p></li>
+<li><p><strong>areaSm</strong> – area array of the smoothed density (numpy array). The cummulative area of the density, hence it returns for any position the cummulative area from 0 to the postion.</p></li>
+<li><p><strong>areaSm</strong> – area array of the non-smoothed density (numpy array). The cummulative area of the density, hence it returns for any position the cummulative area from 0 to the postion.</p></li>
+<li><p><strong>areaError</strong> – The area and areaSm are forced to integrate 1, nevertheless the numeric approximation actually do not integrate 1 due to the various approximations that the process uses,
+This variable stores the actual integral, hence it gives a measure of the error.</p></li>
+<li><p><strong>areaSmError</strong> – Similar to areaError but for the smooth version of the TOC.</p></li>
+<li><p><strong>FP</strong> – an array of false positives, hence it is possible to plot or to analyze the density vs the FP.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A TOC curve of <code class="docutils literal notranslate"><span class="pre">kind</span></code> “density”, in contrast with other TOC kinds, it includes the variables mentioned above.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">TOC</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.generateMassFunction_secant">
+<span class="sig-name descname"><span class="pre">generateMassFunction_secant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.generateMassFunction_secant" title="Link to this definition">¶</a></dt>
+<dd><p>This function generates an approximation of the Histogram of frequencies from the TOC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> – The Hits + True Positives. They are basically an array from the range 0 to len(Y)</p></li>
+<li><p><strong>Y</strong> – The associated Hits to each Hits + true positive values generated at each Threshold</p></li>
+<li><p><strong>h</strong> – The distance between TOC points to calculate the slope of the secant line.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The approximation to the first derivative of the TOC using the secant method that represents the histogram of frequencies in terms of Hits + False Alarms</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.indices">
+<span class="sig-name descname"><span class="pre">indices</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#src.tocplus.TOC.indices" title="Link to this definition">¶</a></dt>
+<dd><p>This attibute stores the indices fo the sorted rank. Storing the indices is useful to save computational time when converting a rank array to a probability value.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.kind">
+<span class="sig-name descname"><span class="pre">kind</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'None'</span></em><a class="headerlink" href="#src.tocplus.TOC.kind" title="Link to this definition">¶</a></dt>
+<dd><p>The <code class="docutils literal notranslate"><span class="pre">kind</span></code> attribute indicates the type of TOC curve, that is to say, it is <strong>“TOC”</strong> kind if the <em>x</em> axes presents the true positives plus false positives count, and the <em>y</em> axes presents the true-positive count.
+It is a <strong>“Vector””</strong> kind if the curve is a representation of the original TOC, that is to say it stores <em>nvector</em> vectorial means of the original TOC data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.ndata">
+<span class="sig-name descname"><span class="pre">ndata</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.ndata" title="Link to this definition">¶</a></dt>
+<dd><p>This attribute stores the number of data in the arrays of the class,  notice that the number of positives (<code class="docutils literal notranslate"><span class="pre">npos</span></code>) or other counts are altered when interpolations, normalization or vectorization of the TOC is applied, while <code class="docutils literal notranslate"><span class="pre">ndata</span></code> stores the length of the data arrays independent of the mentioned counts.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.normalize">
+<span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.normalize" title="Link to this definition">¶</a></dt>
+<dd><p>This method scales the axis to the interval [0,1]. The self TOC (the TOC which the method is called from) is normalized, there is not new memory allocation.
+:return: Returns the modified TOC curve
+:rtype: <code class="docutils literal notranslate"><span class="pre">TOC</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">kind</span></code> TOC curve is <em>‘normalized’</em>.
+The  true positives plus false positives count is 1, ntppfp=1,
+and true positives, TP=1.
+Nevertheless the basentppfp and basenpos stores the values of the self TOC.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.npos">
+<span class="sig-name descname"><span class="pre">npos</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.npos" title="Link to this definition">¶</a></dt>
+<dd><p>Similar to ntpfp, this variable stores the number of positive data (1 valued data), and also it is lost in the normalized TOC ( it is 1 in th enormalized TOC).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.ntppfp">
+<span class="sig-name descname"><span class="pre">ntppfp</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.ntppfp" title="Link to this definition">¶</a></dt>
+<dd><p>This is the count fo true positives plus false positives. Notice that this number could be different from the number of data, for instance, normalized, vector, resampled or density TOCs could have a different ndata and ntppfp value.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.pararea">
+<span class="sig-name descname"><span class="pre">pararea</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#src.tocplus.TOC.pararea" title="Link to this definition">¶</a></dt>
+<dd><p>parallelogram area.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TOCname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TOC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2400</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.plot" title="Link to this definition">¶</a></dt>
+<dd><p>A generic plot function for all the kind of TOCs.  All the parameters are optional. If <code class="docutils literal notranslate"><span class="pre">filename</span></code> is not given it plots to a window, otherwise it is a png file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – Optional. If given it must be a png filename, otherwise the TOC is plotted to a window.</p></li>
+<li><p><strong>title</strong> – Optional, title of the plot.</p></li>
+<li><p><strong>kind</strong> – Optional, a standard TOC can be plotted normalized or in the original axis values.</p></li>
+<li><p><strong>height</strong> – pixels of the height. 1800 by default.</p></li>
+<li><p><strong>width</strong> – pixels of the width. 1800 by default.</p></li>
+<li><p><strong>dpi</strong> – resolution. 300 by default.</p></li>
+<li><p><strong>xlabel</strong> – string.</p></li>
+<li><p><strong>ylabel</strong> – string.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>it does not return anything.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.plotAttractiveness">
+<span class="sig-name descname"><span class="pre">plotAttractiveness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.plotAttractiveness" title="Link to this definition">¶</a></dt>
+<dd><p>This function plots an approximated version of the second derivative of the TOC. The second derivative of the toc gives information regarding the appealingness of certain value of the rank associated to positive data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.plotHistograms">
+<span class="sig-name descname"><span class="pre">plotHistograms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.plotHistograms" title="Link to this definition">¶</a></dt>
+<dd><p>This function plots an Histogram of frequencies from the approximated derivative of the TOC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.rank2prob">
+<span class="sig-name descname"><span class="pre">rank2prob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rank</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Density'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.rank2prob" title="Link to this definition">¶</a></dt>
+<dd><p>This function computes probability values associated to a rank value. The <code class="docutils literal notranslate"><span class="pre">thresholds</span></code> array of the density TOC is used for this purpose.
+Very possibly the rank is the same than those used to compute a standard TOC instantiated by TOC(rank,groundtruth), hence the indices used
+in the constructor are available and can save computational time. Otherwise the indices are recomputed. In any case the inputed <code class="docutils literal notranslate"><span class="pre">rank</span></code>
+array must be in the same interval than the thresholds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rank</strong> – A numpy array with the ran. The intended uses is that this rank comes from the standard TOC computation, and to associate this rank with geolocations, hence the probabilities can be associated in the same order.</p></li>
+<li><p><strong>kind</strong> – if <code class="docutils literal notranslate"><span class="pre">kind</span></code> is ‘’density’’ the probabilitites are computed with the non-smoothed density function, otherwise the smooth version is used. Notice that a this function only must be called from a ‘’density’’ kind TOC. Optional</p></li>
+<li><p><strong>indices</strong> – Indices of the reversely sorted rank, this array is computed by the standard TOC computation. Hence the computational cost of recomputing them could be avoided, otherwise the indices are recomputed and they are not stored. Optional</p></li>
+</ul>
+</dd>
+</dl>
+<p>return: a numpy array with the probabilities. The probabilities do not sum 1, instead they sum <code class="docutils literal notranslate"><span class="pre">PDataProp</span></code>, that is to say they sum the proportion of positives in the data. That is an estimation of the probability of having a 1-class valued datum.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.resample">
+<span class="sig-name descname"><span class="pre">resample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.resample" title="Link to this definition">¶</a></dt>
+<dd><p>This function creates a new TOC curve,  the data of the self TOC (the TOC which the method is called from)
+is interpolated to the number of data, and the true positves plus false positves, <code class="docutils literal notranslate"><span class="pre">TPplusFP</span></code>  in T2.
+Considering that the number of true positives plus false positives is modified (usually extended to a greater value)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T2</strong> – the TOC curve with the desired number of data and data values in the TPplusFP axis.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A TOC of the same kind than T2.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#src.tocplus.TOC" title="src.tocplus.TOC">TOC</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.tocplus.TOC.thresholds">
+<span class="sig-name descname"><span class="pre">thresholds</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#src.tocplus.TOC.thresholds" title="Link to this definition">¶</a></dt>
+<dd><p>A numpy array with thresholds of the TOC, they are computed using the ranks, that is to say, in the standard TOC most of the ranks are equal to the thresholds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.tickPositions">
+<span class="sig-name descname"><span class="pre">tickPositions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sorted_ranks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.tickPositions" title="Link to this definition">¶</a></dt>
+<dd><p>This function computes the tick positions of the secondary axes regarding the inherent cummulative distribution of the TOC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sorted_ranks</strong> – Received ranks sorted in increase order</p></li>
+<li><p><strong>n</strong> – number of ticks</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Equispaced ticks, position of the equispaced ticks</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.tocplus.TOC.vector">
+<span class="sig-name descname"><span class="pre">vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nmeans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.tocplus.TOC.vector" title="Link to this definition">¶</a></dt>
+<dd><p>Computes a vector representation of the curve using the mean of sets of points.
+The points are those in a set of intervals with equal number of points. if <code class="docutils literal notranslate"><span class="pre">nmeans=30</span></code>, then the number of points in the
+original TOC is divided by 30. If nmeans=-1 (default) the number of intervals is automatically computed, the maximum possible are 8000 the minimum are 1000 or n/5 (the lower).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nmeans</strong> – The number of intervals. Optional parameter that can be automatically computed. Optional</p></li>
+<li><p><strong>kind</strong> – If the input is a normalized TOC the output is a <em>‘nvector’</em>, otherwise it is a <em>‘verctor’</em> kind.</p></li>
+<li><p><strong>basenpos</strong><strong>,</strong><strong>basentppfp</strong> (<em>npos</em><em>, </em><em>ntppfp</em><em>,</em>) – The counts are taken from the input TOC.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A TOC instance of the vector representation, new memory is allocated.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">TOC</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="module2.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Parameters:</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, R. Lopez-Farias and S. I. Valdez
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">TOC</span></code></a><ul>
+<li><a class="reference internal" href="#src.tocplus.TOC.PDataProp"><code class="docutils literal notranslate"><span class="pre">TOC.PDataProp</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.TOCdiff"><code class="docutils literal notranslate"><span class="pre">TOC.TOCdiff()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.TP"><code class="docutils literal notranslate"><span class="pre">TOC.TP</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.TPplusFP"><code class="docutils literal notranslate"><span class="pre">TOC.TPplusFP</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.area"><code class="docutils literal notranslate"><span class="pre">TOC.area</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.areaComputation"><code class="docutils literal notranslate"><span class="pre">TOC.areaComputation()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.areaRatio"><code class="docutils literal notranslate"><span class="pre">TOC.areaRatio</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.basenpos"><code class="docutils literal notranslate"><span class="pre">TOC.basenpos</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.basentppfp"><code class="docutils literal notranslate"><span class="pre">TOC.basentppfp</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.density"><code class="docutils literal notranslate"><span class="pre">TOC.density()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.generateMassFunction_secant"><code class="docutils literal notranslate"><span class="pre">TOC.generateMassFunction_secant()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.indices"><code class="docutils literal notranslate"><span class="pre">TOC.indices</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.kind"><code class="docutils literal notranslate"><span class="pre">TOC.kind</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.ndata"><code class="docutils literal notranslate"><span class="pre">TOC.ndata</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.normalize"><code class="docutils literal notranslate"><span class="pre">TOC.normalize()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.npos"><code class="docutils literal notranslate"><span class="pre">TOC.npos</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.ntppfp"><code class="docutils literal notranslate"><span class="pre">TOC.ntppfp</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.pararea"><code class="docutils literal notranslate"><span class="pre">TOC.pararea</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.plot"><code class="docutils literal notranslate"><span class="pre">TOC.plot()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.plotAttractiveness"><code class="docutils literal notranslate"><span class="pre">TOC.plotAttractiveness()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.plotHistograms"><code class="docutils literal notranslate"><span class="pre">TOC.plotHistograms()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.rank2prob"><code class="docutils literal notranslate"><span class="pre">TOC.rank2prob()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.resample"><code class="docutils literal notranslate"><span class="pre">TOC.resample()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.thresholds"><code class="docutils literal notranslate"><span class="pre">TOC.thresholds</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.tickPositions"><code class="docutils literal notranslate"><span class="pre">TOC.tickPositions()</span></code></a></li>
+<li><a class="reference internal" href="#src.tocplus.TOC.vector"><code class="docutils literal notranslate"><span class="pre">TOC.vector()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    </body>
+</html>
