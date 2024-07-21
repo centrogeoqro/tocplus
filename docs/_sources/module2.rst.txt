@@ -1,0 +1,2 @@
+.. automodule:: src.toccompare
+    :members:
